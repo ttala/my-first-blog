@@ -8,14 +8,11 @@
 	<p>Published on 12.05.2009</p>
 	</diV>
 	<diV>
-	<h2><a href="#">My first post</a></h2>
-	We're almost there, now it's time to tell it to save this change in its history. We're going to give it a "commit message" where we describe what we've changed. You can type anything you'd like at this stage, but it's helpful to type something descriptive so that you can remember what you've done in the future.
-	</div>
-	<diV>
-	<h2><a href="#">My Second blog</a></h2>
-	Yaaay! But so far, our template only ever displays exactly the same information – whereas earlier we were talking about templates as allowing us to display different information in the same format.
-
-What we really want to do is display real posts added in our Django admin – and that's where we're going next.
+	{% for post in posts %}
+		<h2>{{ post }}</h2>
+		<p>published: {{ post.created_date }}</p>
+		<div>{{ post.text }}</div>
+		{% endfor %}
 	</div>
 </body>
 </html>
