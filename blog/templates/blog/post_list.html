@@ -8,11 +8,13 @@
 	<p>Published on 12.05.2009</p>
 	</diV>
 	<diV>
+		<p>this is the starts.</p>
 	{% for post in posts %}
 		<h2>{{ post }}</h2>
 		<p>published: {{ post.created_date }}</p>
 		<div>{{ post.text }}</div>
 		{% endfor %}
+		<p> And this is the end.</p>
 	</div>
 </body>
 </html>
