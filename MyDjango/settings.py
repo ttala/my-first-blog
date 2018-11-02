@@ -25,7 +25,7 @@ SECRET_KEY = 'zr7*3amt%k6cdv*eyf1^wtgdv=0d#@3_id-@%&z=hbsu7j+61p'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '.tyeri_django.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'ttala.pythonanywhere.com', '.tyeri_django.com']
 
 
 # Application definition
